@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,CAAC,CAAA;EACG,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACzB;;AAGD,AAAA,IAAI,CAAC,IAAI,CAAA;EACL,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACf;;AAED,AAAA,IAAI,CAAA;EACA,SAAS,EDNN,cAAc,EAAE,UAAU;CCQhC",
+    "sources": [
+        "main.scss",
+        "_constrains.scss",
+        "_web.scss",
+        "_mobile.scss",
+        "_countdown.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

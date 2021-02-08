@@ -5,12 +5,20 @@
 }
 
 
-html body{
+html, body{
     width: 100%;
     height: 100%;
 }
 
 body{
-    font-size: $font;
-    
+    font-size: $font-size;
+    font-family: $font;
+    background-image: url('../images/bg-stars.svg');
+    background-color: $medium-dark-color;
+    background-size: 1000px;
+}
+
+.container{
+    min-height: 100%;
+    position: relative;
 }

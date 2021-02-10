@@ -1,3 +1,4 @@
+@import './mobile';
 *{
     margin: 0;
     padding: 0;
@@ -16,9 +17,238 @@ body{
     background-image: url('../images/bg-stars.svg');
     background-color: $medium-dark-color;
     background-size: 1000px;
+    color: white;
+}
+
+.card-title{
+    display: block;
+    margin-top: 15px;
+    font-size: 0.45rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    opacity: 0.75;
+    text-transform: uppercase;
 }
 
 .container{
     min-height: 100%;
     position: relative;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 141px 10px 277px;
+
+    h2{
+        font-size: 23px;
+        text-align: center;
+        letter-spacing: 0.5rem;
+        text-transform: uppercase;
+        @include mobile(){
+            font-size: 22px;
+              letter-spacing: .45rem;
+                }
+    }
+    @include mobile(){
+       
+            padding: 135px 10px 245px;
+            
+          
+
+    }
+
+}
+
+#counter{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    grid-template: repeat(2,auto)/repeat(2,auto);
+    padding: 46px 0;
+    @include mobile(){
+        padding: 93px 0;
+         }
+}
+
+.countdown{
+    margin: 10px 8px;
+    @include mobile(){
+       margin: 10px 15px;
+        }
+}
+
+.card{
+    width: 70px;
+    height: 66px;
+    position: relative;
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 0;
+    perspective: 225px;
+    @include mobile(){
+       width: 150px;
+       height: 140px;
+       font-size: 5rem;
+
+        }
+    &::after,&::before{
+        content:'';
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        position: absolute;
+        top: 63px;
+        z-index: 2;
+        background-color: $medium-dark-color ;
+        @include mobile(){
+          width: 12px;
+          height: 12px;
+             }
+    }
+    &::before{
+        left: -3px;
+    
+        @include mobile(){
+            left: -6px;
+
+                }
+       
+
+    }
+    &::after{
+        
+        right: -3px;
+        @include mobile(){
+            right: -6px;
+                }
+
+    }
+}
+
+.card-title{
+    display: block;
+    margin-top: 15px;
+    font-size: 0.45rem;
+    letter-spacing: 0.2rem;
+    align-items: center;
+    opacity: 0.75;
+    @include mobile(){
+        margin-top: 25px;
+        font-size: 1rem;
+        letter-spacing: .3rem;
+        }
+   
+}
+
+.card-base{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    @include mobile(){
+        perspective: 400px;
+    }
+    
+    &::before, &::after{
+        display: flex;
+        height: 50%;
+        width: 100%;
+        position: absolute;
+        justify-content: center;
+        z-index: 0;
+        overflow: hidden;
+        color: $secondary-color;
+        background-color: $light-dark-color;
+       
+    }
+    &::before{
+        content: attr(data-base-before);
+        border-radius: 0 0 5px 5px;
+        bottom: 0;
+        align-items: flex-start;
+        box-shadow: 0px 5px 0px 0px $very-dark-color ;
+        @include mobile(){
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0px 10px 0px 0px $very-dark-color;
+            }
+    }
+
+    &::after{
+        content: attr(data-base-after);
+        border-bottom: 1px solid $medium-dark-color;
+        border-radius: 5px 5px 0 0;
+        top: 0;
+        align-items: flex-end;
+        filter: brightness(85%);
+        @include mobile(){
+            border-radius: 8px 8px 0 0;
+            }
+
+    }
+}
+
+.c-container{
+  width: 100%;
+  height: 50%;
+  position: relative;
+  z-index: 1;
+  transform: rotateX(0);
+  transform-origin: bottom;
+  transform-style: preserve-3d;
+  &-face {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    overflow: hidden;
+    backface-visibility: hidden;
+    &-front,
+    &-back {
+      color: $secondary-color;
+      background-color: $light-dark-color;
+    }
+    &-front {
+      border-radius: 5px 5px 0 0;
+      align-items: flex-end;
+      filter: brightness(85%);
+      @include mobile(){
+        border-radius: 8px 8px 0 0;
+         }
+    }
+    &-back {
+      border-top: 1px solid $medium-dark-color;
+      border-radius: 0 0 5px 5px;
+      align-items: flex-start;
+      transform: rotateX(-180deg);
+      @include mobile(){
+        border-radius: 0 0 8px 8px;
+         }
+    }
+  }
+
+}
+
+footer{
+display: flex;
+  height: 200px;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  background: url('../images/pattern-hills.svg') no-repeat;
+  background-position: -625px;
+  background-size: 300% 100%;
+
+}
+
+.social-media{
+    display: flex;
+    margin-top: 78;
 }

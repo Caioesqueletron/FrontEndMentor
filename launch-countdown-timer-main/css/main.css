@@ -128,7 +128,7 @@ main h2 {
   height: 6px;
   border-radius: 50%;
   position: absolute;
-  top: 63px;
+  top: 29.9px;
   z-index: 2;
   background-color: #1e1f29;
 }
@@ -137,6 +137,7 @@ main h2 {
   .card::after, .card::before {
     width: 12px;
     height: 12px;
+    top: 63px;
   }
 }
 

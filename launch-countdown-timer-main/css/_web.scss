@@ -8,6 +8,8 @@
 
 html, body{
     width: 100%;
+    overflow: hidden;
+
     height: 100%;
 }
 
@@ -107,7 +109,7 @@ main{
         @include mobile(){
           width: 12px;
           height: 12px;
-          top: 63px;
+          top: 64px;
 
              }
     }
@@ -115,7 +117,7 @@ main{
         left: -3px;
     
         @include mobile(){
-            left: -6px;
+            left: -7px;
 
                 }
        
@@ -251,6 +253,9 @@ display: flex;
 }
 
 .social-media{
-    display: flex;
-    margin-top: 78;
+    a{
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    }
 }

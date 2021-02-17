@@ -49,7 +49,7 @@ body {
   -webkit-box-shadow: 20px 20px 60px #6a6f81, -20px -20px 60px #19a2ae;
           box-shadow: 20px 20px 60px #6a6f81, -20px -20px 60px #19a2ae;
   width: 350px;
-  height: 400px;
+  height: 380px;
   background-color: white;
   border-radius: 15px;
 }
@@ -75,16 +75,32 @@ body {
 
 .profile-name {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
   color: #969696;
   top: -25px;
 }
 
 .profile-name p {
   padding-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .name {
-  padding-right: 8px;
+  padding-right: 4px;
   color: #2d3248;
 }
 
@@ -92,16 +108,49 @@ body {
   font-weight: 100;
 }
 
-.followers dt {
+.followers {
+  width: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  border-top: 1px solid #E8E9EC;
+}
+
+.profile-stats {
+  padding: 10px 37px 0px 20px;
+}
+
+.number {
+  font-size: 18px;
+  color: #2d3248;
+  font-weight: 700;
+}
+
+.type {
+  font-size: 10px;
+  color: #6a6f81;
+  letter-spacing: 1.5px;
+  padding-top: 10px;
+}
+
+.attribution {
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans';
+  height: 100vh;
+  width: 100%;
+  font-size: 18px;
+  background: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-color: #19a2ae;
+  background-position: right 50vw bottom 40vh, left 50vw top 50vh;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.card-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 20px 20px 60px #6a6f81, -20px -20px 60px #19a2ae;
+          box-shadow: 20px 20px 60px #6a6f81, -20px -20px 60px #19a2ae;
+  width: 350px;
+  height: 400px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.card-header img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.profile img {
+  height: 96px;
+  width: 96px;
+  background-color: #fff;
+  position: relative;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.profile-name {
+  position: relative;
+  color: #969696;
+  top: -25px;
+}
+
+.profile-name p {
+  padding-top: 10px;
+}
+
+.name {
+  padding-right: 8px;
+  color: #2d3248;
+}
+
+.age {
+  font-weight: 100;
+}
+
+.followers dt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+/*# sourceMappingURL=main.css.map */

@@ -7,7 +7,7 @@
 
 
 body{
-    background-image: url('images/bg-pattern.svg');
+    background-image: url('../images/bg-pattern.svg');
     background-size: 100% 60%;
     background-repeat: no-repeat;
     font-family: 'Manrope', sans-serif;
@@ -121,7 +121,7 @@ input[type=range]{
     height: 35px;
     border-radius: 50%;
     background-color:hsl(174, 86%, 45%);
-    background-image: url('images/icon-slider.svg');
+    background-image: url('../images/icon-slider.svg');
     background-repeat: no-repeat;
     background-position: center;
   
@@ -172,7 +172,7 @@ input[type=range]{
     padding:  30px 0px;
     }
     #third-section ul {
-        list-style-image: url('images/icon-check.svg');
+        list-style-image: url('../images/icon-check.svg');
         color: #858fad;
     }
     #third-section li{

@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  background: #f5f7ff;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #f5f7ff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.5rem 0;
+}
+
+header .title-box .title {
+  color: #1e202a;
+}
+
+header .title-box p {
+  color: #63687e;
+  font-weight: 700;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.toggle-mode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #63687e;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.toggle-mode input[type=checkbox] {
+  -webkit-appearance: none;
+  width: 90px;
+  height: 40px;
+  border-radius: 100px;
+  margin-left: 20px;
+  background: #aeb3cb;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+}
+
+.toggle-mode input[type=checkbox]::before {
+  content: '';
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  background: white;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  position: absolute;
+}
+
+.followers, .grid-overview {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #f0f2fa;
+  position: relative;
+}
+
+.card:hover {
+  background: #d0d5e7;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  height: 5px;
+  border-radius: 8px 8px 0 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.card span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1db489;
+  font-weight: 700;
+}
+
+.card span img {
+  margin-right: 5px;
+}
+
+.card .username {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #63687e;
+  font-weight: 700;
+}
+
+.card .username img {
+  margin-right: 10px;
+}
+
+.card .down {
+  color: #dc414c;
+}
+
+.card .title-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.card .title-card span {
+  font-size: 1.1em;
+  color: #63687e;
+  font-weight: 700;
+}
+
+.card .text-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 100%;
+}
+
+.card .text-card p {
+  font-size: 2.8em;
+  font-weight: 700;
+  color: #1e202a;
+}
+
+.card.facebook::before {
+  background: #198ff5;
+}
+
+.card.instagram::before {
+  background: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background: linear-gradient(to right, #fdc468, #df4996);
+}
+
+.card.twitter::before {
+  background: #1ca0f2;
+}
+
+.card.youtube::before {
+  background: #c4032a;
+}
+
+.count-follow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #63687e;
+}
+
+.count-follow span {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #1e202a;
+}
+
+.overview {
+  margin-top: 50px;
+}
+
+.overview h2 {
+  color: #63687e;
+  font-size: 1.7em;
+  font-weight: 700;
+}
+
+.grid-overview {
+  margin: 20px 0;
+}
+/*# sourceMappingURL=main.css.map */

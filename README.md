@@ -21,7 +21,10 @@ Repositorio criado com intuito de reunir os desafios do Front End Mentor feitos 
 <a href="https://modest-hermann-24f85f.netlify.app/" target="_blank">Link</a>
 - Launch Countdown Timer<br>
 <a href="https://flamboyant-villani-27f186.netlify.app/" target="_blank">Link</a>
-
+- Profile Card Component<br>
+<a href="https://hungry-blackwell-540226.netlify.app/" target="_blank">Link</a>
+- Social Media Dashboard<br>
+<a href="https://serene-saha-409ad3.netlify.app/" target="_blank">Link</a>
 ## Tecnologias
 
 - [x] HTML, SCSS, JS,CSS,React

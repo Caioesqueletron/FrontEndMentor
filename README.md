@@ -12,15 +12,16 @@ Front End Mentor
 
 ## Sobre
 Repositorio criado com intuito de reunir os desafios do Front End Mentor feitos até então.
-## Imagem do UI
+<img src="./assets/logo=frontend-mentor-svg">
+
+
+
+## Links dos desafios
 - Interactive Price Componenete
 <a href="https://modest-hermann-24f85f.netlify.app/"></a>
 - Launch Countdown Timer
 <a href="https://flamboyant-villani-27f186.netlify.app/"></a>
--
-## Links dos desafios
 
-<img src="./assets/logo=frontend-mentor-svg">
 ## Tecnologias
 
 - [x] HTML, SCSS, JS,CSS,React

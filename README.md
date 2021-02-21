@@ -12,7 +12,7 @@ Front End Mentor
 
 ## Sobre
 Repositorio criado com intuito de reunir os desafios do Front End Mentor feitos até então.
-<img src="./assets/logo-frontend-mentor-svg">
+<img src="./assets/logo-frontend-mentor.svg">
 
 
 
@@ -28,7 +28,7 @@ Repositorio criado com intuito de reunir os desafios do Front End Mentor feitos 
 - [x] SVG Images, PNG images
 
 ## Requisitos para o projeto
-1 Fazer o git clone https://github.com/Caioesqueletron/FrontEndMentor.git
+1. Fazer o git clone https://github.com/Caioesqueletron/FrontEndMentor.git
 2. Abrir a pasta do projeto no `VSCode`
 3. Acessar um dos projetos ou links destes acima
 4. Instalar a extensão `Live Server` 

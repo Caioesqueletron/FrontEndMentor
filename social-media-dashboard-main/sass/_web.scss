@@ -231,3 +231,15 @@ header{
 .grid-overview{
     margin: 20px 0;
 }
+
+footer{
+    padding:30px;
+    font-size: 1.5em;
+    .attribution {
+        text-align: center;
+      }
+  
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+}

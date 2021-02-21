@@ -338,4 +338,17 @@ header .title-box p {
 .grid-overview {
   margin: 20px 0;
 }
+
+footer {
+  padding: 30px;
+  font-size: 1.5em;
+}
+
+footer .attribution {
+  text-align: center;
+}
+
+footer .attribution a {
+  color: #3e52a3;
+}
 /*# sourceMappingURL=main.css.map */

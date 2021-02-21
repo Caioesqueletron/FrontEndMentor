@@ -18,9 +18,9 @@ Repositorio criado com intuito de reunir os desafios do Front End Mentor feitos 
 
 ## Links dos desafios
 - Interactive Price Componenete
-<a href="https://modest-hermann-24f85f.netlify.app/"></a>
+<a href="https://modest-hermann-24f85f.netlify.app/" target="_blank">Link</a>
 - Launch Countdown Timer
-<a href="https://flamboyant-villani-27f186.netlify.app/"></a>
+<a href="https://flamboyant-villani-27f186.netlify.app/" target="_blank">Link</a>
 
 ## Tecnologias
 

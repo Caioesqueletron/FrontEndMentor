@@ -2,7 +2,7 @@
 Front End Mentor
 </h1>
 
-<img align="center" src="./assets/logo-frontend-mentor.svg">
+<img align="center" width="100%" src="./assets/logo-frontend-mentor.svg">
 
 
 

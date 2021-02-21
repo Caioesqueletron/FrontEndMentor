@@ -2,6 +2,7 @@
 Front End Mentor
 </h1>
 
+<img align="center" src="./assets/logo-frontend-mentor.svg">
 
 
 
@@ -12,7 +13,6 @@ Front End Mentor
 
 ## Sobre
 Repositorio criado com intuito de reunir os desafios do Front End Mentor feitos até então.
-<img src="./assets/logo-frontend-mentor.svg">
 
 
 

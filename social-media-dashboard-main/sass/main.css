@@ -1,3 +1,22 @@
+:root {
+  --lime-green: hsl(163, 72%, 41%);
+  --bright-red: hsl(356, 69%, 56%);
+  --facebook: hsl(208, 92%, 53%);
+  --twitter:hsl(203, 89%, 53%);
+  --instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --youtube: hsl(348, 97%, 39%);
+  --toggle-light-theme: hsl(230, 22%, 74%);
+  --very-dark-blue-bg: hsl(230, 17%, 14%);
+  --desatured-blue: hsl(228, 34%, 66%);
+  --white: hsl(0, 0%, 100%);
+  -whiteBg: white;
+  --very-pale-blue:hsl(225, 100%, 98%);
+  --light-grayish-blue: hsl(227, 47%, 96%);
+  --dark-grayish-blue: hsl(228, 12%, 44%);
+  --very-dark-blue: hsl(230, 17%, 14%);
+  --cardlighthover: hsl(227,32%,86%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,13 +27,29 @@
 body {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
-  background: white;
+  background: var(--whiteBg);
 }
 
 .dark {
-  background-color: #f5f7ff;
+  --toggle-light-theme:linear-gradient(to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+  --white: hsl(232, 19%, 15%);
+  --light-grayish-blue: hsl(228, 28%, 20%);
+  --very-dark-blue: white;
+  --very-pale-blue: hsl(232, 19%, 15%);
+  --whiteBg:hsl(230, 17%, 14%);
+  --cardlighthover: hsl(228,26%,26%);
+}
+
+.layer {
+  background-color: var(--very-pale-blue);
   width: 100%;
   height: 260px;
+}
+
+@media screen and (max-width: 768px) {
+  .layer {
+    height: 290px;
+  }
 }
 
 header {
@@ -24,19 +59,43 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #f5f7ff;
+  background: var(--very-pale-blue);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 2.5rem 0;
 }
 
+@media screen and (max-width: 768px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .title-box {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding-bottom: 30px;
+  }
+}
+
 header .title-box .title {
-  color: #1e202a;
+  color: var(--very-dark-blue);
 }
 
 header .title-box p {
-  color: #63687e;
+  color: var(--dark-grayish-blue);
   font-weight: 700;
 }
 
@@ -52,9 +111,24 @@ header .title-box p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #63687e;
+  color: var(--dark-grayish-blue);
   font-weight: 700;
   font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .toggle-mode {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px 0;
+    margin-bottom: -15px;
+    border-top: 1px solid var(--dark-grayish-blue);
+  }
 }
 
 .toggle-mode input[type=checkbox] {
@@ -63,7 +137,7 @@ header .title-box p {
   height: 40px;
   border-radius: 100px;
   margin-left: 20px;
-  background: #aeb3cb;
+  background: var(--toggle-light-theme);
   cursor: pointer;
   outline: 0;
   position: relative;
@@ -74,7 +148,7 @@ header .title-box p {
   height: 40px;
   width: 40px;
   border-radius: 50px;
-  background: white;
+  background: var(--white);
   -webkit-transform: translateX(0) scale(0.8);
           transform: translateX(0) scale(0.8);
   -webkit-transition: -webkit-transform 0.3s;
@@ -97,6 +171,13 @@ header .title-box p {
   grid-gap: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .followers, .grid-overview {
+    -ms-grid-columns: 6fr;
+        grid-template-columns: 6fr;
+  }
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,12 +192,12 @@ header .title-box p {
   padding: 30px;
   border-radius: 8px;
   cursor: pointer;
-  background: #f0f2fa;
+  background: var(--light-grayish-blue);
   position: relative;
 }
 
 .card:hover {
-  background: #d0d5e7;
+  background: var(--cardlighthover);
 }
 
 .card::before {
@@ -136,7 +217,7 @@ header .title-box p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #1db489;
+  color: var(--lime-green);
   font-weight: 700;
 }
 
@@ -151,7 +232,7 @@ header .title-box p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #63687e;
+  color: var(--dark-grayish-blue);
   font-weight: 700;
 }
 
@@ -160,7 +241,7 @@ header .title-box p {
 }
 
 .card .down {
-  color: #dc414c;
+  color: var(--bright-red);
 }
 
 .card .title-card {
@@ -179,7 +260,7 @@ header .title-box p {
 
 .card .title-card span {
   font-size: 1.1em;
-  color: #63687e;
+  color: var(--dark-grayish-blue);
   font-weight: 700;
 }
 
@@ -199,24 +280,23 @@ header .title-box p {
 .card .text-card p {
   font-size: 2.8em;
   font-weight: 700;
-  color: #1e202a;
+  color: var(--very-dark-blue);
 }
 
 .card.facebook::before {
-  background: #198ff5;
+  background: var(--facebook);
 }
 
 .card.instagram::before {
-  background: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
-  background: linear-gradient(to right, #fdc468, #df4996);
+  background: var(--instagram);
 }
 
 .card.twitter::before {
-  background: #1ca0f2;
+  background: var(--twitter);
 }
 
 .card.youtube::before {
-  background: #c4032a;
+  background: var(--youtube);
 }
 
 .count-follow {
@@ -235,14 +315,14 @@ header .title-box p {
   font-weight: 400;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: #63687e;
+  color: var(--dark-grayish-blue);
 }
 
 .count-follow span {
   font-size: 4rem;
   font-weight: 700;
   letter-spacing: 0;
-  color: #1e202a;
+  color: var(--very-dark-blue);
 }
 
 .overview {
@@ -250,7 +330,7 @@ header .title-box p {
 }
 
 .overview h2 {
-  color: #63687e;
+  color: var(--dark-grayish-blue);
   font-size: 1.7em;
   font-weight: 700;
 }

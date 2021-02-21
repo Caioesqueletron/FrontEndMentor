@@ -2,14 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body{
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     background: $very-pale-blue;
-
-    
+    .dark{
+        $toggle-light-theme:linear-gradient(to ritght,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+    }
 }
 
 header{
@@ -35,9 +37,7 @@ header{
     margin: 0 auto;
 }
 
-.dark{
 
-}
 
 .toggle-mode{
     display: flex;
@@ -64,7 +64,13 @@ header{
             transform: scale(0.8);
             position: absolute;
         }
+        &:checked{
+            &::before{
+                transform: scale(0.8);
+            }
         }
+        }
+
         
 }
 
